@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Upheaval TT';
+  src: url('./fonts/upheavtt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   background-color: #282c34;
   min-height: 100vh;
@@ -5,8 +12,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-header {
@@ -16,16 +21,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  text-align: center;
+  font-size: calc(60px + 2vmin);
   color: white;
+  font-family: 'Upheaval TT', sans-serif;
 }
 
-.h1 {
+p {
   text-align: center;
-}
-
-.p {
-  text-align: center;
+  font-size: calc(20px + 2vmin);
+  color: white;
+  font-family: 'Upheaval TT', sans-serif;
 }
 
 @media (max-width: 768px) { /* Adjust width as needed for mobile */
