@@ -21,7 +21,7 @@ const TogglePdfDisplay = () => {
         </button>
       </div>
       <div className={styles.pdfContainer}>
-        {activePdf === 'learnMore' && <PdfViewer fileUrl="/pdfs/investor-guide.pdf" />}
+        {activePdf === 'learnMore' && <PdfViewer fileUrl="/pdfs/white-paper.pdf" />}
         {activePdf === 'investorInfo' && <PdfViewer fileUrl="/pdfs/investor-guide.pdf" />}
       </div>
     </div>
