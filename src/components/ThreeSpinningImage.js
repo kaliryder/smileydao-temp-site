@@ -74,9 +74,14 @@ const ThreeSpinningImage = () => {
 
     // Handle resizing
     const onWindowResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      // For a full-width canvas on smaller screens, 
+      // you might want to consider the innerHeight/innerWidth of the window
+      const width = window.innerWidth;
+      const height = window.innerHeight; // Or some aspect ratio if preferred
+      
+      camera.aspect = width / height;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(width, height);
     };
 
     window.addEventListener('resize', onWindowResize, false);

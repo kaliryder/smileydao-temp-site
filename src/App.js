@@ -1,6 +1,6 @@
 import React from 'react';
-import ThreeSpinningImage from './ThreeSpinningImage';
-import PdfViewer from './PdfViewer';
+import ThreeSpinningImage from './components/ThreeSpinningImage';
+import PdfViewer from './components/PdfViewer';
 import './App.css';
 
 function App() {

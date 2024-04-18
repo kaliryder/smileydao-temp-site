@@ -5,9 +5,14 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px; /* Adjust this value as needed */
+    /*max-width: 100%;*/
+      width: 100%; /* Ensures the container takes up the full width of the screen */
+      max-width: 600px; /* Optional: set a max-width for larger screens */
+      margin: auto;
+      position: relative; /* For absolute positioning of child elements */    
   }
   
-  .buttonContainer {
+  .button-container {
     display: flex;
     justify-content: center;
     margin-top: 10px; /* Adjust this value as needed */
@@ -17,7 +22,7 @@
     margin: 0 5px; /* Adjust this value as needed */
   }
 
-  .annotationLayer {
+  .annotation-layer {
     display: none !important;
     height: 0px;
   }

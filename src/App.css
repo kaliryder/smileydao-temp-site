@@ -28,4 +28,20 @@
   text-align: center;
 }
 
+@media (max-width: 768px) { /* Adjust width as needed for mobile */
+  .App, .App-header {
+    align-items: center;
+  }
+
+  .App-header h1, .App-header p {
+    text-align: center;
+    padding: 0 20px; /* Add some padding on smaller screens */
+  }
+  
+  /* Adjust sizes for smaller screens */
+  .App {
+    font-size: calc(8px + 2vmin);
+  }
+}
+
 
