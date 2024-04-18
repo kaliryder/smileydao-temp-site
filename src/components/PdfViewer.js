@@ -47,7 +47,7 @@ const PdfViewer = ({ fileUrl }) => {
       </Document>
       <div className="buttonContainer">
         <button onClick={() => setPageNumber(Math.max(1, pageNumber - 1))} disabled={pageNumber <= 1}>
-          Previous
+          Back
         </button>
         <button onClick={() => setPageNumber(Math.min(numPages, pageNumber + 1))} disabled={pageNumber >= numPages}>
           Next

@@ -1,7 +1,7 @@
 import React from 'react';
 import ThreeSpinningImage from './components/ThreeSpinningImage';
-import PdfViewer from './components/PdfViewer';
 import './App.css';
+import TogglePdfDisplay from './components/TogglePdfDisplay';
 
 function App() {
   return (
@@ -10,8 +10,7 @@ function App() {
         <h1>SMILEY DAO</h1>
         <p>Full site under construction...</p>
         <ThreeSpinningImage></ThreeSpinningImage>
-        <PdfViewer fileUrl="/pdfs/investor-guide.pdf" />
-        <PdfViewer fileUrl="/pdfs/investor-guide.pdf" />
+        <TogglePdfDisplay></TogglePdfDisplay>
       </div>
     </div>
   );

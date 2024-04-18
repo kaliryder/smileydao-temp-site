@@ -1,4 +1,10 @@
 /* PdfViewer.module.css */
+@font-face {
+  font-family: 'Upheaval TT';
+  src: url('../fonts/upheavtt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .container {
     display: flex;
@@ -19,7 +25,16 @@
   }
   
   button {
-    margin: 0 5px; /* Adjust this value as needed */
+    font-family: 'Upheaval TT', sans-serif;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 15px; /* Size of the buttons */
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10%;
+    font-size: 0.8 rem; /* Responsive font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
   }
 
   .annotation-layer {
