@@ -1,22 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ThreeSpinningImage from './ThreeSpinningImage';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ThreeSpinningImage></ThreeSpinningImage>
+        <h1>Welcome to My Simple Site</h1>
+        <p>This is a collection of links I find useful:</p>
+        <ul>
+          <li><a href="https://example.com">Example Link 1</a></li>
+          <li><a href="https://example.com">Example Link 2</a></li>
+        </ul>
       </header>
     </div>
   );
