@@ -1,18 +1,18 @@
 import React from 'react';
 import ThreeSpinningImage from './ThreeSpinningImage';
+import PdfViewer from './PdfViewer';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
+        <h1>SMILEY DAO</h1>
+        <p>Full site under construction...</p>
         <ThreeSpinningImage></ThreeSpinningImage>
-        <h1>Welcome to My Simple Site</h1>
-        <p>This is a collection of links I find useful:</p>
-        <ul>
-          <li><a href="https://example.com">Example Link 1</a></li>
-          <li><a href="https://example.com">Example Link 2</a></li>
-        </ul>
-      </header>
+        <PdfViewer fileUrl="/pdfs/investor-guide.pdf" />
+        <PdfViewer fileUrl="/pdfs/investor-guide.pdf" />
+      </div>
     </div>
   );
 }
