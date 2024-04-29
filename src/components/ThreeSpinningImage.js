@@ -13,6 +13,7 @@ const ThreeSpinningImage = () => {
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(width, height);
     mountRef.current.appendChild(renderer.domElement);
+    const currentRef = mountRef.current;
 
     const clock = new THREE.Clock();
 
@@ -71,7 +72,9 @@ const ThreeSpinningImage = () => {
 
     return () => {
       window.removeEventListener('resize', onWindowResize);
-      mountRef.current.removeChild(renderer.domElement);
+      if (currentRef) {
+        currentRef.removeChild(renderer.domElement);
+      }
       scene.remove(cylinder);
       geometry.dispose();
       material.dispose();
